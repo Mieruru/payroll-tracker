@@ -1,10 +1,12 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
+// Making employeesArray available as a global object
+const employeesArray = [];
+
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Catch exceptions (input null, type check, partial values)
-  const employeesArray = [ ]
 
     let dataEntry = true;
     while (dataEntry){
@@ -30,6 +32,15 @@ const collectEmployees = function() {
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
+  // Generate a sum of employee salaries
+  let sum = 0;
+
+  for (let i = 0; i < employeesArray.length; i++) {
+    sum += employeesArray[i].salary;
+  }
+
+  // print the average employee salary to the console
+  console.log(`The average employee salary between our ${employeesArray.length} employees is $${sum / employeesArray.length}.`)
 }
 
 // Select a random employee
