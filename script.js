@@ -17,7 +17,7 @@ const collectEmployees = function() {
       employeesArray.push({
         firstName: inputFirstName,
         lastName: inputLastName,
-        salary: inputSalary,
+        salary: Number(inputSalary),
         })
         
       dataEntry = window.confirm("Do you want to add another employee?");
