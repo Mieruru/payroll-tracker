@@ -6,6 +6,12 @@ Homework assignment for the third week of BootcampSpot's full stack webdev cours
 
 ## Website URL
 
+## Sample Images
+
+![alt text](./assets/sample-1.png "Sample Image 1")
+
+![alt text](./assets/sample-2.png "Sample Image 2")
+
 ## Installation
 
 N/A
